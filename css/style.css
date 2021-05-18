@@ -403,7 +403,7 @@ template {
 .navbar-menu__list {
   list-style-type: none;
   margin: 0;
-  padding: 31px 0;
+  padding: 30px 0 31px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -516,7 +516,7 @@ template {
 }
 
 .hotel {
-  padding-top: 13px;
+  padding-top: 17px;
   padding-bottom: 70px;
 }
 
@@ -535,12 +535,10 @@ template {
 
 .hotel-info__offer {
   margin-left: 14px;
-  margin-top: 4px;
 }
 
 .hotel-info__name {
-  margin-top: 4px;
-  margin-bottom: 0;
+  margin: 0;
 }
 
 .hotel-info__description {
@@ -663,7 +661,7 @@ template {
   font-weight: 600;
   font-size: 10px;
   line-height: 13px;
-  padding: 4px 9px;
+  padding: 3px 9px;
   background-color: #EC1F46;
   border-radius: 3px;
   color: #ffffff;
@@ -671,7 +669,7 @@ template {
 
 .rating {
   max-width: 65px;
-  min-height: 45px;
+  min-height: 44px;
   text-align: center;
   color: #ffffff;
   background-color: #EC1F46;
@@ -902,6 +900,7 @@ template {
   font-weight: 300;
   font-size: 14px;
   line-height: 18px;
+  color: #BDBDBD;
 }
 
 .subscribe__button {
@@ -929,7 +928,7 @@ template {
   line-height: 45px;
   text-align: center;
   text-transform: uppercase;
-  margin-bottom: 70px;
+  margin-bottom: 71px;
   margin-top: 0;
 }
 
@@ -1012,7 +1011,7 @@ template {
       -ms-flex-align: center;
           align-items: center;
   margin-top: -45px;
-  margin-bottom: 30px;
+  margin-bottom: 32px;
 }
 
 .reviews-slider__avatar {
@@ -1084,24 +1083,28 @@ template {
     width: 132px;
   }
   .navbar-top {
-    padding-top: 29px;
-    padding-bottom: 29px;
+    padding: 30px 0;
   }
   .navbar__search {
     margin-left: 52px;
   }
   .navbar-menu__list {
-    padding: 21px 14px;
+    padding: 19px 13px 23px 14px;
   }
   .navbar-menu__link {
     font-size: 12px;
     line-height: 15px;
   }
   .search__input {
-    width: 340px;
+    width: 336px;
+    padding-left: 19px;
+  }
+  .breadcrumb-list {
+    padding: 19px 0;
   }
   .hotel {
-    padding-bottom: 58px;
+    padding-bottom: 57px;
+    padding-top: 15px;
   }
   .hotel-grid {
     -webkit-box-orient: vertical;
@@ -1112,6 +1115,9 @@ template {
   .hotel-slider {
     width: 100%;
   }
+  .hotel-info__rating {
+    margin-top: 7px;
+  }
   .hotel__slider {
     margin-bottom: 30px;
   }
@@ -1120,6 +1126,9 @@ template {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+  }
+  .offer {
+    padding: 4px 9px 3px 9px;
   }
   .booking {
     width: 340px;
@@ -1130,6 +1139,9 @@ template {
   }
   .newsletter {
     padding: 92px 0 93px 0;
+  }
+  .reviews {
+    padding: 40px 0 70px 0;
   }
   .reviews-title {
     font-size: 30px;
@@ -1252,9 +1264,15 @@ template {
             transform: translate(50%, 0);
     margin-right: -65px;
   }
+}
+
+@media (max-width: 576px) {
+  .breadcrumb-list {
+    padding: 19px 0 22px 0;
+  }
   .hotel {
     padding-top: 0;
-    padding-bottom: 42px;
+    padding-bottom: 43px;
   }
   .hotel-right {
     -webkit-box-orient: vertical;
@@ -1266,21 +1284,22 @@ template {
   .hotel-info {
     padding-bottom: 39px;
   }
-  .hotel-info__offer {
-    margin-left: 3px;
-  }
   .hotel-slider {
     height: 180px;
   }
   .hotel__slider {
-    margin-bottom: 20px;
+    margin-bottom: 18px;
   }
   .booking {
     width: 100%;
+    padding: 30px 22px 25px 23px;
+  }
+  .booking__call-center {
+    margin-bottom: 17px;
   }
   .map {
     width: 100%;
-    height: 172px;
+    height: 169px;
   }
   .logo {
     width: 99px;
@@ -1290,9 +1309,6 @@ template {
   }
   .container {
     width: 87%;
-  }
-  .booking {
-    padding: 28px 22px 28px 23px;
   }
   .subscribe {
     width: 100%;
