@@ -1267,7 +1267,7 @@ template {
   .activities__card {
     margin-bottom: 20px;
   }
-  .activities .card {
+  .card {
     width: 340px;
     height: 255px;
   }
@@ -1496,6 +1496,10 @@ template {
     -webkit-box-ordinal-group: 5;
         -ms-flex-order: 4;
             order: 4;
+  }
+  .card {
+    width: 340px;
+    height: 255px;
   }
 }
 /*# sourceMappingURL=style.css.map */
