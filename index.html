@@ -15,21 +15,21 @@
 </head>
 
 <body>
-  <header class="navbar">
+  <header class="navbar navbar__mobile--fixed">
     <div class="container">
       <div class="navbar-top">
         <a href="#" class="logo">
           <img src="img/horizontal-logo.svg" alt="Logo: Best Tour Plan" class="logo__image" />
         </a>
 
-        <form action="#" class="search navbar__search">
+        <form action="#" class="search navbar__search navbar__search--mobile--hidden">
           <input type="text" class="search__input" placeholder="Search Location" />
           <button class="search__button">
             <img src="img/search.svg" alt="Icon: search" />
           </button>
         </form>
 
-        <a href="#" class="user navbar__user">
+        <a href="#" class="user navbar__user navbar__user--mobile--hidden">
           <img src="img/user-avatar.jpg" alt="Avatar: Nathan" class="user__avatar" />
           <span class="user__name">Nathan</span>
         </a>
@@ -49,25 +49,40 @@
       <div class="container">
         <nav class="navbar-menu">
           <ul class="navbar-menu__list">
-            <li class="navbar-menu__item">
+            <li class="navbar-menu__item navbar-menu__item--mobile--visible">
+              <a href="#" class="user navbar__user navbar__user--mobile--visible">
+                <img src="img/user-avatar.jpg" alt="Avatar: Nathan" class="user__avatar user__avatar--mobile" />
+                <span class="user__name user__name--light">Nathan</span>
+              </a>
+              <!-- /.user -->
+            </li>
+            <li class="navbar-menu__item navbar-menu__item--mobile--visible">
+              <form action="#" class="search navbar__search navbar__search--mobile--visible">
+                <input type="text" class="search__input" placeholder="Search Location" />
+                <button class="search__button">
+                  <img src="img/search.svg" alt="Icon: search" />
+                </button>
+              </form>
+            </li>
+            <li class="navbar-menu__item navbar-menu__item--mobile">
               <a href="#" class="navbar-menu__link">All Deals</a>
             </li>
-            <li class="navbar-menu__item">
+            <li class="navbar-menu__item navbar-menu__item--mobile">
               <a href="#" class="navbar-menu__link">Hotels</a>
             </li>
-            <li class="navbar-menu__item">
+            <li class="navbar-menu__item navbar-menu__item--mobile">
               <a href="#" class="navbar-menu__link">Activities</a>
             </li>
-            <li class="navbar-menu__item">
+            <li class="navbar-menu__item navbar-menu__item--mobile">
               <a href="#" class="navbar-menu__link">Hotel Day Packages</a>
             </li>
-            <li class="navbar-menu__item">
+            <li class="navbar-menu__item navbar-menu__item--mobile">
               <a href="#" class="navbar-menu__link">Restaurants</a>
             </li>
-            <li class="navbar-menu__item">
+            <li class="navbar-menu__item navbar-menu__item--mobile">
               <a href="#" class="navbar-menu__link">Events</a>
             </li>
-            <li class="navbar-menu__item">
+            <li class="navbar-menu__item navbar-menu__item--mobile">
               <a href="#" class="navbar-menu__link">Rodrigues</a>
             </li>
           </ul>
@@ -93,6 +108,7 @@
     <!-- /.container -->
   </nav>
   <!-- /.breadcrumb -->
+
   <section class="hotel">
     <div class="container">
       <div class="hotel-info">
@@ -119,6 +135,7 @@
         <!-- /.hotel-info__rating -->
       </div>
       <!-- /.hotel-info -->
+
       <div class="hotel-grid">
         <!-- Slider main container -->
         <div class="swiper-container hotel-slider hotel__slider">
@@ -153,6 +170,7 @@
                 <span class="booking__per-room">per room / night</span>
               </div>
               <!-- /.booking__price -->
+
               <div class="booking__room">
                 <div class="booking__text">
                   <img src="img/user.svg" alt="icon:user" class="booking__icon" />
