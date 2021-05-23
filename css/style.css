@@ -1679,6 +1679,7 @@ template {
   .navbar-bottom--visible {
     display: block;
     overflow: auto;
+    scrollbar-width: none;
   }
   .navbar-menu__list {
     -webkit-box-orient: vertical;
@@ -2057,12 +2058,6 @@ template {
   }
   .bottom__link {
     margin-right: 7px;
-  }
-}
-
-@media (max-height: 495px) {
-  .navbar-menu__list {
-    overflow: auto;
   }
 }
 /*# sourceMappingURL=style.css.map */
