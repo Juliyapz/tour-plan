@@ -507,6 +507,10 @@ template {
   cursor: pointer;
 }
 
+.search__button:hover {
+  background-color: #e08696;
+}
+
 .user {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -861,6 +865,10 @@ template {
   cursor: pointer;
 }
 
+.booking__button:hover {
+  background-color: #e08696;
+}
+
 .map {
   position: relative;
   width: 347px;
@@ -868,6 +876,22 @@ template {
   background-color: #383333;
   border-radius: 10px;
   overflow: hidden;
+}
+
+.thankyou-title {
+  margin-bottom: 30px;
+}
+
+.thankyou-link {
+  background-color: #EC1F46;
+  color: #ffffff;
+  padding: 10px 10px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.thankyou-link:hover {
+  background-color: #e08696;
 }
 
 .newsletter {
@@ -960,6 +984,10 @@ template {
   line-height: 15px;
   min-width: 65px;
   cursor: pointer;
+}
+
+.subscribe__button:hover {
+  background-color: #e08696;
 }
 
 .reviews {
@@ -1458,6 +1486,7 @@ template {
 .modal__dialog--visible {
   visibility: visible;
   opacity: 1;
+  overflow: auto;
 }
 
 .modal__close {
@@ -1726,7 +1755,7 @@ template {
     -webkit-box-ordinal-group: 11;
         -ms-flex-order: 10;
             order: 10;
-    margin-right: 16%;
+    margin-right: 39%;
   }
   .modal__info {
     margin-bottom: 15px;
@@ -1736,6 +1765,11 @@ template {
   }
   .bottom__link {
     margin-right: 15px;
+  }
+  .modal__dialog {
+    padding: 33px 30px;
+    min-width: 300px;
+    max-height: 95%;
   }
 }
 
@@ -2168,10 +2202,6 @@ template {
   }
   .bottom__link {
     margin-right: 7px;
-  }
-  .modal__dialog {
-    padding: 33px 30px;
-    min-width: 300px;
   }
 }
 /*# sourceMappingURL=style.css.map */

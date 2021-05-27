@@ -31,7 +31,7 @@ $(document).ready(function () {
     },
   });
 
-  var menuButton = $(".menu-button")
+  var menuButton = $(".menu-button");
   menuButton.on("click", function () {
     $(".navbar-bottom").toggleClass("navbar-bottom--visible");
   });
@@ -55,4 +55,13 @@ $(document).ready(function () {
     modalOverlay.removeClass('modal__overlay--visible');
     modalDialog.removeClass('modal__dialog--visible');
   }
+
+  $(document).keyup(function (e) {
+    if (e.keyCode == 27) {
+      var modalOverlay = $(".modal__overlay");
+      var modalDialog = $(".modal__dialog");
+      modalOverlay.removeClass('modal__overlay--visible');
+      modalDialog.removeClass('modal__dialog--visible');
+    }
+  });
 });
