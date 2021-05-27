@@ -210,14 +210,78 @@
     </div>
     <!-- /.container -->
   </section>
+
+  <section class="packages">
+    <div class="container">
+      <div class="packages-wrapper">
+        <h2 class="packages__title">
+          Other Packages
+        </h2>
+        <div class="card-1">
+          <div class="card-1__block">
+            <img class="card-1__img" src="img/packages-1.jpg" alt="photo">
+            <span class="packages__offer">Flash offer</span>
+          </div>
+          <div class="packages-card card-1__info">
+            <div class="packages-card__stars">
+              <img src="img/star.svg" alt="star" />
+              <img src="img/star.svg" alt="star" />
+              <img src="img/star.svg" alt="star" />
+              <img src="img/star.svg" alt="star" />
+              <img src="img/star.svg" alt="star" />
+            </div>
+            <h3 class="packages-card__title">
+              Hotel Blue Haven
+            </h3>
+            <p class="packages-card__text">
+              Aute quis duis excepteur excepteur ipsum cat eiusmod consectetur enim laborum magna llit. Ipsum est fugiat
+              velit ea
+              llamco do esse ut in veniam sun in onsequat. Aute quis duis epteur excepteur ipsum occaecat eiusmod
+              nsectetur enim
+              laborum magna mollit. Ipsum est fugiat velit ea ullamco do
+            </p>
+            <div class="packages-card-room card__room">
+              <div class="packages-card-room__text">
+                <img src="img/map-pin.svg" alt=""><span class="packages-card-room__description">1749 Wheeler Ridge
+                  Delaware</span>
+              </div>
+              <div class="packages-card-room__text">
+                <img src="img/user.svg" alt=""><span class="packages-card-room__description">2 x Guests</span>
+              </div>
+              <div class="packages-card-room__text">
+                <img src="img/home.svg" alt=""><span class="packages-card-room__description">1 x Room</span>
+              </div>
+            </div>
+            <div class="packages-card-price">
+              <div class="packages-card-price__text">
+                <span class="old-price">$ 10,500</span>
+                <span class="new-price">
+                  $ 8,500
+                </span>
+              </div>
+              <div class="packages-card-prise__button">
+                <a href="#" class="price-button">
+                  Book Now
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- /.container -->
+  </section>
+  <!-- /.packages -->
+
   <section class="newsletter" data-parallax="scroll" data-image-src="img/newsletter-bg.jpg">
     <div class="newsletter-wrapper">
       <h2 class="newsletter-title newsletter__title">
         subscribe to our
         <span class="newsletter-title__strong">Newsletter</span>
       </h2>
-      <form action="send.php" method="POST" class="subscribe newsletter__subscribe">
-        <input type="text" class="subscribe__input" placeholder="Your email address" name="email" /><button
+      <form action="send.php" method="POST" class="subscribe newsletter__subscribe form">
+        <input type="text" class="subscribe__input" placeholder="Your email address" name="email" required /><button
           class="subscribe__button">Send</button>
       </form>
     </div>
@@ -566,10 +630,14 @@
 
         <div class="footer__contacts-form">
           <h2 class="footer__title footer__title--mb-3">Send us a message</h2>
-          <form action="send.php" method="POST" class="footer__form">
-            <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name">
-            <input type="text" class="input footer__input" placeholder="Phone Number*" name="phone">
+          <form action="send.php" method="POST" class="footer__form form">
+            <div class="footer__input-group">
+              <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name" required>
+            </div>
+            <div class="footer__input-group">
+              <input type="text" class="input footer__input" placeholder="Phone Number*" name="phone" required>
 
+            </div>
             <textarea class="message footer__message" placeholder="Message" name="message"></textarea>
 
             <button class="button footer__button" type="submit">Send</button>
@@ -600,10 +668,10 @@
         <img src="img/close.svg" alt="Icon: close">
       </a>
       <h2 class="modal__title modal__title--mb-3">Booking</h2>
-      <form action="send.php" method="POST" class="modal__form">
-        <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name">
-        <input type="text" class="input modal__input" placeholder="Phone Number*" name="phone">
-        <input type="text" class="input modal__input" placeholder="Email*" name="email">
+      <form action="send.php" method="POST" class="modal__form form">
+        <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" required minlength="2">
+        <input type="text" class="input modal__input phone" placeholder="Phone Number*" name="phone" required>
+        <input type="text" class="input modal__input" placeholder="Email*" name="email" required>
         <textarea class=" message modal__message" placeholder="Message" name="message"></textarea>
 
         <button class="button modal__button" type="submit">Send</button>
@@ -617,9 +685,11 @@
 
   <script src="js/jquery-3.6.0.min.js"></script>
   <script src="js/swiper-bundle.min.js"></script>
-  <script src="js/main.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <script src="js/parallax.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/jquery.mask.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>

@@ -56,6 +56,26 @@ $(document).ready(function () {
     modalDialog.removeClass('modal__dialog--visible');
   }
 
+  $(".form").each(function () {
+    $(this).validate({
+      errorClass: "invalid",
+      messages: {
+        name: {
+          required: "You need to give a name",
+          minlength: "Eat more than two characters"
+        },
+        phone: {
+          required: "It's a mandatori filed",
+        },
+        email: {
+          required: "We need your email address to contact you",
+          email: "Your email address must be in the format of name@domain.com"
+        },
+      },
+    });
+  });
+  $('.phone').mask('+7(000)000-00-00');
+
   $(document).keyup(function (e) {
     if (e.keyCode == 27) {
       var modalOverlay = $(".modal__overlay");
