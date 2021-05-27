@@ -28,11 +28,14 @@
     visibility: hidden
     opacity: 0
     transition: opacity 0.2s
-
+    max-height: 95%
     &--visible
       visibility: visible
       opacity: 1
       overflow: auto
+      scrollbar-width: none
+      &::-webkit-scrollbar
+        width: 0
   &__close
     position: absolute
     right: 18px

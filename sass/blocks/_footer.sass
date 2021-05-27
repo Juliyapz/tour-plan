@@ -27,6 +27,9 @@
       display: flex
       grid-row: 2 / 4
       grid-column: span 2
+  &__social-logo
+    &:hover
+      border: 1px solid $primari
   &__contact-details
     grid-column: span 2
   &__contacts-form
@@ -89,18 +92,22 @@
   &__link
     text-decoration: none
     color: inherit
+    &:hover
+      color: $primari
   &__input
     margin-bottom: 15px
     flex-basis: 47%
   &__message
     flex-basis: 100%
     margin-bottom: 23px
-
   &__info
     font-weight: bold
     font-size: 12px
     line-height: 15px
     color: #E0E0E0
+  &__button
+    &:hover
+      background-color: $primari-light
   &__bottom
     display: flex
     justify-content: flex-end
@@ -119,5 +126,7 @@
     color: $light
     margin-right: 12px
     text-decoration: none
+    &:hover
+      color: $primari
   &__img
     margin-left: 269px

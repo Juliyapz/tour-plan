@@ -469,6 +469,10 @@ template {
   display: none;
 }
 
+.navbar-menu__item:hover {
+  color: #EC1F46;
+}
+
 .logo {
   width: 177px;
 }
@@ -529,11 +533,19 @@ template {
      object-fit: cover;
 }
 
+.user__avatar:hover {
+  border: 2px solid #EC1F46;
+}
+
 .user__name {
   margin-left: 18px;
   font-size: 14px;
   line-height: 18px;
   color: #333333;
+}
+
+.user__name:hover {
+  color: #EC1F46;
 }
 
 .breadcrumb-list {
@@ -561,6 +573,10 @@ template {
 .breadcrumb-list__link {
   text-decoration: none;
   color: inherit;
+}
+
+.breadcrumb-list__link:hover {
+  color: #EC1F46;
 }
 
 .hotel {
@@ -1066,9 +1082,17 @@ template {
   left: 16px;
 }
 
+.reviews-slider__button--prev:hover {
+  border: 2px dashed #EC1F46;
+}
+
 .reviews-slider__button--next {
   background-image: url(../img/arrow-next-secondary.svg);
   right: 16px;
+}
+
+.reviews-slider__button--next:hover {
+  border: 2px dashed #EC1F46;
 }
 
 .reviews-slider__profile {
@@ -1223,6 +1247,10 @@ template {
   cursor: pointer;
 }
 
+.card__button:hover {
+  background-color: #e08696;
+}
+
 .footer {
   background-color: #0A223D;
   color: #ffffff;
@@ -1283,6 +1311,10 @@ template {
   -ms-grid-row-span: 2;
   grid-row: 2 / 4;
   grid-column: span 2;
+}
+
+.footer__social-logo:hover {
+  border: 1px solid #EC1F46;
 }
 
 .footer__contact-details {
@@ -1392,6 +1424,10 @@ template {
   color: inherit;
 }
 
+.footer__link:hover {
+  color: #EC1F46;
+}
+
 .footer__input {
   margin-bottom: 15px;
   -ms-flex-preferred-size: 47%;
@@ -1409,6 +1445,10 @@ template {
   font-size: 12px;
   line-height: 15px;
   color: #E0E0E0;
+}
+
+.footer__button:hover {
+  background-color: #e08696;
 }
 
 .footer__bottom {
@@ -1440,6 +1480,10 @@ template {
   color: #ffffff;
   margin-right: 12px;
   text-decoration: none;
+}
+
+.bottom__link:hover {
+  color: #EC1F46;
 }
 
 .bottom__img {
@@ -1481,12 +1525,18 @@ template {
   opacity: 0;
   -webkit-transition: opacity 0.2s;
   transition: opacity 0.2s;
+  max-height: 95%;
 }
 
 .modal__dialog--visible {
   visibility: visible;
   opacity: 1;
   overflow: auto;
+  scrollbar-width: none;
+}
+
+.modal__dialog--visible::-webkit-scrollbar {
+  width: 0;
 }
 
 .modal__close {
@@ -1769,7 +1819,6 @@ template {
   .modal__dialog {
     padding: 33px 30px;
     min-width: 300px;
-    max-height: 95%;
   }
 }
 
