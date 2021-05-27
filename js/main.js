@@ -74,7 +74,7 @@ $(document).ready(function () {
       },
     });
   });
-  $('.phone').mask('+7(000)000-00-00');
+  $('.phone').mask('+7(000) 000-00-00');
 
   $(document).keyup(function (e) {
     if (e.keyCode == 27) {
