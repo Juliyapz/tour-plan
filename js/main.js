@@ -85,5 +85,6 @@ $(document).ready(function () {
       modalDialog.removeClass('modal__dialog--visible');
     }
   });
+
   AOS.init();
 });

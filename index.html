@@ -9,30 +9,31 @@
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
   <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link rel="stylesheet" href="css/aos.css">
   <link
     href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&family=Nunito:wght@400;600;800&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/aos.css">
   <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
   <header class="navbar navbar--mobile--fixed">
     <div class="container">
-      <div class="navbar-top" data-aos="fade-up">
-        <a href="index.html" class="logo">
+      <div class="navbar-top">
+        <a href="index.html" class="logo" data-aos="fade-right" data-aos-delay="100">
           <img src="img/horizontal-logo.svg" alt="Logo: Best Tour Plan" class="logo__image" />
         </a>
 
-        <form action="#" class="search navbar__search navbar__search--mobile--hidden">
+        <form action="#" class="search navbar__search navbar__search--mobile--hidden" data-aos="fade-right"
+          data-aos-delay="200">
           <input type="text" class="search__input" placeholder="Search Location" />
           <button class="search__button">
             <img src="img/search.svg" alt="Icon: search" />
           </button>
         </form>
 
-        <a href="#" class="user navbar__user navbar__user--mobile--hidden">
+        <a href="#" class="user navbar__user navbar__user--mobile--hidden" data-aos="fade-right" data-aos-delay="300">
           <img src="img/user-avatar.jpg" alt="Avatar: Nathan" class="user__avatar" />
           <span class="user__name">Nathan</span>
         </a>
@@ -454,27 +455,27 @@
   </section>
   <section class="activities">
     <div class="container">
-      <h2 class="activities__title" data-aos="find-ap">Other Activities</h2>
+      <h2 class="activities__title">Other Activities</h2>
       <div class="activities-wrapper">
-        <div class="card activities__card">
+        <div class="card activities__card" data-aos="fade-up" data-aos-delay="100">
           <img src="img/activity-1.jpg" alt="The curious corner of chamarel" class="card__image">
           <h3 class="card__title">The curious corner <br> of chamarel</h3>
           <button data-toggle="modal" class="card__button">Book Now</button>
         </div>
         <!-- /.card 1-->
-        <div class="card activities__card">
+        <div class="card activities__card" data-aos="fade-up" data-aos-delay="300">
           <img src="img/activity-2.jpg" alt="Gymkhana club golf course" class="card__image">
           <h3 class="card__title">Gymkhana club golf <br> course</h3>
           <button data-toggle="modal" class="card__button">Book Now</button>
         </div>
         <!-- /.card 2-->
-        <div class="card activities__card">
+        <div class="card activities__card" data-aos="fade-up" data-aos-delay="500">
           <img src="img/activity-3.jpg" alt="Tamarind falls hiking trip - full day" class="card__image">
           <h3 class="card__title">Tamarind falls hiking <br> trip - full day</h3>
           <button data-toggle="modal" class="card__button">Book Now</button>
         </div>
         <!-- /.card 3-->
-        <div class="card activities__card">
+        <div class="card activities__card" data-aos="fade-up" data-aos-delay="700">
           <img src="img/activity-4.jpg" alt="The blue marine discovery quest" class="card__image">
           <h3 class="card__title">The blue marine discovery <br> quest</h3>
           <button data-toggle="modal" class="card__button">Book Now</button>
@@ -638,7 +639,7 @@
             </div>
             <div class="footer__input-group">
               <input type="tel" class="input footer__input phone" placeholder="Phone Number*" name="phone" required
-                minlength="14">
+                minlength="17">
 
             </div>
             <textarea class="message footer__message" placeholder="Message" name="message"></textarea>
@@ -674,7 +675,7 @@
       <form action="send.php" method="POST" class="modal__form form">
         <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" required minlength="2">
         <input type="tel" class="input modal__input phone" placeholder="Phone Number*" name="phone" required
-          minlength="14">
+          minlength="17">
         <input type="email" class="input modal__input" placeholder="Email*" name="email" required>
         <textarea class=" message modal__message" placeholder="Message" name="message"></textarea>
 
