@@ -1,4 +1,5 @@
 .packages
+  display: none
   padding-top: 40px
   padding-bottom: 70px
 
@@ -65,7 +66,7 @@
   &__img
     min-width: 366px
     height: 500px
-    border-radius: 8px
+    border-radius: 8px 0 0 8px
     object-fit: cover
   &__info
     padding: 38px 21px 30px 44px
@@ -93,3 +94,36 @@
     text-decoration: none
     padding: 11px 27px
     border-radius: 4px
+
+.card-2
+  position: relative
+  max-width: 350px
+  min-height: 500px
+  background-color: $dark
+  border-radius: 8px
+  &__info
+    padding: 30px 21px 25px 32px
+  &__title
+    font-weight: bold
+    font-size: 18px
+    line-height: 23px
+    color: $light
+    margin: 0 0 23px 0
+  &__img
+    overflow: hidden
+    object-fit: cover
+    border-radius: 8px 8px 0 0
+    min-height: 250px
+  &__offer
+    font-style: normal
+    font-weight: 600
+    font-size: 8px
+    line-height: 10px
+    color: $light
+    position: absolute
+    z-index: 99
+    top: 26px
+    left: 0
+    background-color: $primari
+    border-radius: 0px 4px 4px 0px
+    padding: 4px 9px
