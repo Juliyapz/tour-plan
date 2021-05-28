@@ -9,6 +9,7 @@
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
   <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link rel="stylesheet" href="css/aos.css">
   <link
     href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&family=Nunito:wght@400;600;800&display=swap"
     rel="stylesheet" />
@@ -19,7 +20,7 @@
 <body>
   <header class="navbar navbar--mobile--fixed">
     <div class="container">
-      <div class="navbar-top">
+      <div class="navbar-top" data-aos="fade-up">
         <a href="index.html" class="logo">
           <img src="img/horizontal-logo.svg" alt="Logo: Best Tour Plan" class="logo__image" />
         </a>
@@ -281,8 +282,8 @@
         <span class="newsletter-title__strong">Newsletter</span>
       </h2>
       <form action="send.php" method="POST" class="subscribe newsletter__subscribe form">
-        <input type="text" class="subscribe__input" placeholder="Your email address" name="email" required /><button
-          class="subscribe__button">Send</button>
+        <input type="email" class="subscribe__input input" placeholder="Your email address" name="email"
+          required /><button class="subscribe__button">Send</button>
       </form>
     </div>
     <!-- /.newsletter-wrapper -->
@@ -453,7 +454,7 @@
   </section>
   <section class="activities">
     <div class="container">
-      <h2 class="activities__title">Other Activities</h2>
+      <h2 class="activities__title" data-aos="find-ap">Other Activities</h2>
       <div class="activities-wrapper">
         <div class="card activities__card">
           <img src="img/activity-1.jpg" alt="The curious corner of chamarel" class="card__image">
@@ -632,10 +633,12 @@
           <h2 class="footer__title footer__title--mb-3">Send us a message</h2>
           <form action="send.php" method="POST" class="footer__form form">
             <div class="footer__input-group">
-              <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name" required>
+              <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name" required
+                minlength="2">
             </div>
             <div class="footer__input-group">
-              <input type="text" class="input footer__input" placeholder="Phone Number*" name="phone" required>
+              <input type="tel" class="input footer__input phone" placeholder="Phone Number*" name="phone" required
+                minlength="14">
 
             </div>
             <textarea class="message footer__message" placeholder="Message" name="message"></textarea>
@@ -670,8 +673,9 @@
       <h2 class="modal__title modal__title--mb-3">Booking</h2>
       <form action="send.php" method="POST" class="modal__form form">
         <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" required minlength="2">
-        <input type="text" class="input modal__input phone" placeholder="Phone Number*" name="phone" required>
-        <input type="text" class="input modal__input" placeholder="Email*" name="email" required>
+        <input type="tel" class="input modal__input phone" placeholder="Phone Number*" name="phone" required
+          minlength="14">
+        <input type="email" class="input modal__input" placeholder="Email*" name="email" required>
         <textarea class=" message modal__message" placeholder="Message" name="message"></textarea>
 
         <button class="button modal__button" type="submit">Send</button>
@@ -689,6 +693,7 @@
   <script src="js/parallax.js"></script>
   <script src="js/jquery.validate.min.js"></script>
   <script src="js/jquery.mask.min.js"></script>
+  <script src="js/aos.js"></script>
   <script src="js/main.js"></script>
 </body>
 

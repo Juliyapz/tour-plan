@@ -979,17 +979,14 @@ template {
 }
 
 .subscribe__input {
-  position: absolute;
   width: 100%;
   height: 100%;
-  border: none;
   padding-left: 33px;
   padding-right: 75px;
   font-style: normal;
   font-weight: 300;
   font-size: 14px;
   line-height: 18px;
-  color: #BDBDBD;
 }
 
 .subscribe__button {
@@ -1343,9 +1340,7 @@ template {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: flex-start;
 }
 
 .footer__ul {
@@ -1763,7 +1758,7 @@ template {
     width: 230px;
     height: 230px;
   }
-  .footer__input_group {
+  .footer__input-group {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
@@ -2161,7 +2156,8 @@ template {
         grid-template-columns: 167px 1fr 1fr;
   }
   .footer__input-group {
-    fex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
   }
 }
 
