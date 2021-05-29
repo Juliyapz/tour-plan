@@ -10,6 +10,11 @@
     &__input
       &-group
         flex-basis: 100%
+    &__title
+      &--inline
+        margin-left: -22px
+    &__aditional
+      margin-left: -21px
 @media ( max-width: 992px )
   .container,
   .newsletter-wrapper
@@ -54,6 +59,8 @@
   .booking
     width: 340px
     padding: 30px 22px 28px 23px
+    &__call-center
+      margin-bottom: 16px
   .map
     width: 340px
   .newsletter
@@ -109,7 +116,7 @@
     &__legal
       margin-right: 0
     &__title
-      margin-bottom: 20px
+      margin-bottom: 15px
       &--inline
         margin: 0 44px 0 0px
       &--mb-t
@@ -153,6 +160,7 @@
       order: 10
       margin-right: 39%
     &__info
+      margin-top: 20px
       margin-bottom: 15px
   .bottom
     &__img
@@ -163,6 +171,7 @@
     &__dialog
       padding: 33px 30px
       min-width: 300px
+@media ( max-width:768px )
 
 @media ( max-width:767px )
   body
@@ -310,6 +319,13 @@
       padding-bottom: 39px
     &-slider
       height: 180px
+      &__button
+        width: 10px
+        height: 10px
+      &__button--next
+        right: 10px
+      &__button--prev
+        left: 10px
     &__slider
       margin-bottom: 18px
   .booking
@@ -402,10 +418,13 @@
         margin-bottom: 23px
       &--mb-3
         margin-bottom: 16px
-        margin-top: 5px
+        margin-top: 8px
       &--inline
         margin-bottom: 22px
         margin-right: 40%
+    &__text
+      margin-top: 10px
+      margin-bottom: 18px
     &__social
       &-network
         flex-wrap: wrap
