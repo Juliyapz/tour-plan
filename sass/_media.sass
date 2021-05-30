@@ -171,7 +171,6 @@
     &__dialog
       padding: 33px 30px
       min-width: 300px
-@media ( max-width:768px )
 
 @media ( max-width:767px )
   body
@@ -300,11 +299,81 @@
     width: 49%
     height: 255px
   .footer
+    padding-top: 69px
     &-wrapper
-      grid-template-columns: 167px 1fr 1fr
+      grid-template-columns: 100%
+      grid-row-gap: 28px
+    &__logo
+      grid-row: 1
+      grid-column: 1
+    &__title
+      margin: 0 0 18px 0
+      &--mb-t
+        margin-top: 14px
+        margin-bottom: 23px
+      &--mb-3
+        margin-bottom: 16px
+        margin-top: 8px
+      &--inline
+        margin-bottom: 22px
+        margin-right: 40%
+    &__text
+      margin-top: 10px
+      margin-bottom: 18px
+    &__social
+      &-network
+        flex-wrap: wrap
+        margin-top: 13px
+        grid-row: 2
+        grid-column: 1
+      &-links
+        margin-right: 20%
+    &__aditional
+      grid-row: 4/5
+      grid-column: 1
+      justify-self: start
+      margin-left: 0
+    &__categories
+      grid-row: 5/6
+      grid-column: 1
+    &__legal
+      grid-row: 3/4
+      grid-column: 1
+      justify-self: start
+    &__contact
+      &-details
+        grid-row: 6
+        grid-column: 1
+    &__contacts
+      &-form
+        grid-row: 7
+        grid-column: 1
+    &__item
+      &--mb-2
+        margin-bottom: 22px
+    &__icon
+      &-wrapper
+        min-width: 29px
+      &--phone
+        padding-left: 0px
+        padding-top: 5px
+      &--mail
+        padding-left: 0px
+        padding-top: 4px
+    &__form
+      flex-wrap: wrap
+    &__button
+      order: 10
+    &__info
+      margin-right: 60%
+      margin-bottom: 13px
+    &__message
+      margin-bottom: 16px
     &__input
       &-group
         flex-basis: 100%
+  .thankyou-title
+    margin-bottom: 20px
 @media ( max-width:576px)
   .breadcrumb
     &-list
@@ -404,76 +473,6 @@
     width: 100%
     height: 255px
   .footer
-    padding-top: 69px
-    &-wrapper
-      grid-template-columns: 100%
-      grid-row-gap: 28px
-    &__logo
-      grid-row: 1
-      grid-column: 1
-    &__title
-      margin: 0 0 18px 0
-      &--mb-t
-        margin-top: 14px
-        margin-bottom: 23px
-      &--mb-3
-        margin-bottom: 16px
-        margin-top: 8px
-      &--inline
-        margin-bottom: 22px
-        margin-right: 40%
-    &__text
-      margin-top: 10px
-      margin-bottom: 18px
-    &__social
-      &-network
-        flex-wrap: wrap
-        margin-top: 13px
-        grid-row: 2
-        grid-column: 1
-      &-links
-        margin-right: 20%
-    &__aditional
-      grid-row: 4/5
-      grid-column: 1
-      justify-self: start
-      margin-left: 0
-    &__categories
-      grid-row: 5/6
-      grid-column: 1
-    &__legal
-      grid-row: 3/4
-      grid-column: 1
-      justify-self: start
-    &__contact
-      &-details
-        grid-row: 6
-        grid-column: 1
-    &__contacts
-      &-form
-        grid-row: 7
-        grid-column: 1
-    &__item
-      &--mb-2
-        margin-bottom: 22px
-    &__icon
-      &-wrapper
-        min-width: 29px
-      &--phone
-        padding-left: 0px
-        padding-top: 5px
-      &--mail
-        padding-left: 0px
-        padding-top: 4px
-    &__form
-      flex-wrap: wrap
-    &__button
-      order: 10
-    &__info
-      margin-right: 60%
-      margin-bottom: 13px
-    &__message
-      margin-bottom: 16px
     &__bottom
       flex-wrap: wrap
       padding-top: 28px
@@ -482,3 +481,76 @@
       margin-bottom: 9px
     &__link
       margin-right: 7px
+
+@media(hover: hover) and (pointer: fine)
+  .navbar
+    &-menu
+      &__item
+        &:hover
+          color: $primari
+
+  .search
+    &__button
+      &:hover
+        background-color: $primari-light
+
+  .user
+    &__avatar
+      &:hover
+        border: 2px solid $primari
+    &__name
+      &:hover
+        color: $primari
+
+  .breadcrumb
+    &-list
+      &__link
+        &:hover
+          color: $primari
+
+  .booking
+    &__button
+      &:hover
+        background-color: $primari-light
+    &__number
+      &:hover
+        color: $primari
+
+  .thankyou-link
+    &:hover
+      background-color: $primari-light
+
+  .subscribe
+    &__button
+      &:hover
+        background-color: $primari-light
+  .reviews
+    &-slider
+      &__button
+        &--prev
+          &:hover
+            border: 2px dashed $primari
+        &--next
+          &:hover
+            border: 2px dashed $primari
+
+  .card
+    &__button
+      &:hover
+        background-color: $primari-light
+
+  .footer
+    &__social
+      &-logo
+        &:hover
+          background-color: $primari
+    &__link
+      &:hover
+        color: $primari
+    &__button
+      &:hover
+        background-color: $primari-light
+  .bottom
+    &__link
+      &:hover
+        color: $primari
